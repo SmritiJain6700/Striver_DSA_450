@@ -19,6 +19,13 @@ def binaryToDecimal2(s):
         decimal = decimal * 2 + int(digit)
     return decimal
 
+# notes:
+# reduce(func, sequence, initial) 
+# applies func repeatedly to all elements of sequence, keeping an accumulator.
+# First argument: a function with two inputs (accumulator, current element).
+# Second argument: the sequence (s, your binary string).
+# Third argument: the initial accumulator (0). is this same for all case
+# pattern (accumulator + element → new accumulator) is always the same
 def binaryToDecimalUsingReduce(s):
     return reduce(lambda acc, digit: acc * 2 + int(digit), s, 0)
 
