@@ -1,4 +1,6 @@
 def decimalToBinary(n):
+    if(n == 0):
+        return "0"
     # initialize binary as empty
     binary = ""
     # till n > 0
