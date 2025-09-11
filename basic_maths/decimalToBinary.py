@@ -11,7 +11,7 @@ def decimalToBinary(n):
 
     return binary
 
-x = decimalToBinary(5)
+x = decimalToBinary(0)
 print(x)
 
 # time-complexity = O(logn) 
