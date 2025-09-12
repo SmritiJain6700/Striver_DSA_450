@@ -1,3 +1,6 @@
+# time-complexity = O(n/2) ~ O(n) no of recursive calls = O(n/2)
+# space-complexity = O(n/2) ~ O(n) recursive stack spacegit
+# OOP logic
 class Palindrome:
     def __init__(self, s):
         self.s = s
