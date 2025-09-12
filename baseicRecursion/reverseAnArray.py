@@ -1,5 +1,5 @@
 # time-complexity = O(n/2) ~ O(n) no of recursive calls = O(n/2)
-# space-complexity = O(n/2) ~ O(n) recursive stack space
+# space-complexity = O(n/2) ~ O(n) recursive stack spacegit
 # OOP logic
 class ArrayReverse:
     def __init__(self, arr):
