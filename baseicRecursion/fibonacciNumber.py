@@ -1,8 +1,8 @@
 # time complexity -- O(2**n) -- no of recursive calls = 2**n
 # space complexity -- O(n) -- recursion max goes n level deep -- stack space
-def fibonnaci(n):
+def fibonacci(n):
     if(n == 0 or n == 1):
         return n
-    return fibonnaci(n-1) + fibonnaci(n-2)
+    return fibonacci(n-1) + fibonacci(n-2)
 
-print(fibonnaci(5))
+print(fibonacci(5))
