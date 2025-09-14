@@ -1,3 +1,8 @@
+# Input: n = 200
+# Output: 2
+# Explanation: By reversing the digits of number, number will change into 2.
+# time - complexity - O(number of digits) - O(log10 n)
+# space - complexity - O(1)
 def reverseNumber(n):
     if(n == 0):
         return 0
