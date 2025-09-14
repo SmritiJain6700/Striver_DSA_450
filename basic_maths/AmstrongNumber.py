@@ -10,6 +10,8 @@ class Amstrong:
         self.n = n
 
     def findDigits(self, n):
+        if(n == 0):
+            return list()
         x = self.n
         digits = []
         while(x != 0):
