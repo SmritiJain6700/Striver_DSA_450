@@ -1,3 +1,5 @@
+# time - complexity : O(number of digits in a number) = O(log10 n)
+# space - complexity : O(1)
 class Summ:
     def __init__(self, n):
         self.n = n
