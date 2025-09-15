@@ -1,3 +1,10 @@
+# Bubble sort repeatedly compares adjacent elements and swaps them if they are in the wrong order.
+# After each pass, the largest element "bubbles up" to the end of the list.
+# Repeat until no swaps are needed.
+# time complexity - O(n**2)
+# space - complexity - O(1)
+# stable sort (two equal elements in the sorted array are at the same order as they were in input array) - yes
+# inplace sort (doesn’t require extra memory proportional to input size) - yes
 def bubbleSort(arr):
     # get the length of the array
     n = len(arr)
