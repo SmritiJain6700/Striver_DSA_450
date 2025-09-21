@@ -1,3 +1,7 @@
+# Problem Statement - https://www.geeksforgeeks.org/dsa/find-second-largest-element-array/
+
+# time - complexity - O(nlogn) + n -- because of sorting + the traversing the array
+# space - complexity - O(1)
 def secondLargestElementInArrayUsingSorting(arr):
     arr.sort()
     n = len(arr)
@@ -7,7 +11,8 @@ def secondLargestElementInArrayUsingSorting(arr):
             return arr[i]
     return -1 
 
-
+# time - complexity - O(n) + O(n) -- O(2n) ~ O(n)
+# space - complexity - O(1)
 def secondLargestElementInArrayUsingTwoPassSearch(arr):
     # in first pass find the largest element in the array
     maxx = float("-inf")
@@ -25,7 +30,9 @@ def secondLargestElementInArrayUsingTwoPassSearch(arr):
         return -1
     else:
         return secondMaxx
-    
+
+# time - complexity - O(n) 
+# space - complexity - O(1) 
 def secondLargestElementInArrayUsingOnePassSearch(arr):
     
     maxx = float("-inf")
@@ -44,7 +51,7 @@ def secondLargestElementInArrayUsingOnePassSearch(arr):
         return -1
     return secondMaxx
 
-arr = [1,10,34,45,67,91,0,100]
+arr = [1,2,4,7,7,5]
 print(f"the second largest element in the array using sorting is:", secondLargestElementInArrayUsingSorting(arr))
 print(f"the second largest element in the array using two pass search  is:", secondLargestElementInArrayUsingTwoPassSearch(arr))
 print(f"the second largest element in the array using one pass search is:", secondLargestElementInArrayUsingOnePassSearch(arr))
