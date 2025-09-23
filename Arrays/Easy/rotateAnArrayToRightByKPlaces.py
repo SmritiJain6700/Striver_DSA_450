@@ -78,5 +78,5 @@ print(F"Rotated array {arr} by {k} places", arr)
     
 arr1 = list(map(int, input("Enter the array to be rotated: ").split(",")))
 k = int(input("Enter the no of places by which u want to rotate: "))
-rotateAnArrayToRightBykPlacesUsingExtraSpace(arr1,k)
+rotateArrayToRightByKPlacesByReversingParts(arr1,k)
 print(F"Rotated array {arr1} by {k} places Using Optimal Method", arr1)
