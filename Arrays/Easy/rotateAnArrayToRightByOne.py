@@ -10,6 +10,11 @@ Output: [5, 1, 2, 3, 4]
 Input: arr[] = [2, 3, 4, 5, 1]
 Output: [1, 2, 3, 4, 5]'''
 
+# for both cases
+# time-complexity - O(1)
+# space-complexity - O(1)
+
+
 def rotateArrayToRightByOneByShiftingElemets(arr):
     n = len(arr)
     # storing the last elemet

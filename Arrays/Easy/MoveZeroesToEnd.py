@@ -70,5 +70,5 @@ print("moveZeroesToEndInTwoTraversal",arr1)
 
 arr2 = list(map(int, input("Enter the array elements: ").split(",")))
 moveZeroesTOEndInOneTraversal(arr2)
-print("moveZeroesToEndInTwoTraversal",arr2)
+print("moveZeroesTOEndInOneTraversal",arr2)
 

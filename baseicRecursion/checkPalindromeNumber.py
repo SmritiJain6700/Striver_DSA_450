@@ -1,5 +1,5 @@
-# time - complexity - O(n/2) ~ O(n)
-# space - complexity - O(n/2) ~`O(n) (recurive depth)
+# time - complexity - O(n/2) ~ O(n) -- (we compare about half of the string’s characters)
+# space - complexity - O(n/2) ~`O(n) (recurive stack depth)
 def checkPalindromeNumber(n):
     s = str(n)
     return checkPalindrome(0, len(s)-1 , s)
