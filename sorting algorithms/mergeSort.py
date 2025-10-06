@@ -1,7 +1,19 @@
+# ------ what is this algo? ------
 # Merge Sort Algo - https://www.geeksforgeeks.org/dsa/merge-sort/
 # Merge sort is a popular sorting algorithm known for its efficiency and stability. 
 # It follows the divide-and-conquer approach. 
 # It works by recursively dividing the input array into two halves, recursively sorting the two halves and finally merging them back together to obtain the sorted array.
+
+# ------ Complexity -------
+# time - complexity - O(nlogn) - for all case best, average, worst -- each level of recursion merges n elements, and there are log n levels
+# space - complexity - O(n) for temporary arrays l and r.
+
+# inplace - no  -- as it requires extra space for tempporary array l and r
+
+# stable - Yes -- it maintains the relative order of two same elements
+# Notice you used <= (less than or equal).
+# If elements are equal, the left element (l[i]) gets picked first.
+# This preserves their original order → stable 
 
 def mergeSort(arr, left, right):
     if(left < right):

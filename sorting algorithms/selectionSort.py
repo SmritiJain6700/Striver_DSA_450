@@ -11,6 +11,11 @@
 # 4) Move the boundary of sorted part one step to the right.
 # 5) Repeat until the array is sorted.
 
+# time - complexity - O(n**2)
+# space - complexity - O(1)
+# stable = no (swapping does not maintain the relative order of same elements)
+# inplace = yes
+
 def selectionSort(arr):
     n = len(arr)
     for i in range(0, n):

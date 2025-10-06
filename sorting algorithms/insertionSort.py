@@ -8,6 +8,11 @@
 # 2) Pick elements one by one from the unsorted part and insert them into their correct position in the sorted part.
 # 3) Keep shifting larger elements to the right until the right spot is found.
 
+# Time Complexity:
+# Worst-case: O(n²)
+# Space Complexity: O(1) (in-place)
+# Stable Sort: yes (equal elements retain their order)
+
 def insertionSort(arr):
     n = len(arr)
 

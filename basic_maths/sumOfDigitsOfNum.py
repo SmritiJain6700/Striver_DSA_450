@@ -5,6 +5,8 @@ class Summ:
         self.n = n
     
     def findSumOfDigits(self):
+        if(n == 0):
+            return 0
         summ = 0
         while (self.n != 0):
             x = self.n % 10
