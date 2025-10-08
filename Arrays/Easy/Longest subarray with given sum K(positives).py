@@ -47,7 +47,7 @@ def findLongestSubArrayWithGivenSum2(nums, K):
 # if prefixSum is equal to K
 # then return index+1
 # else check if prefixSum-K in hashMap then it means we found subarray with sum K
-# time - complexity - O(n)
+# time - complexity - O(2n) - O(n)
 # space - complexity - O(1)
 def findLongestSubArrayWithGivenSumUsingPrefixSum(nums, K):
     # to store prefixSum and it corresponding index
@@ -73,10 +73,37 @@ def findLongestSubArrayWithGivenSumUsingPrefixSum(nums, K):
             hashMap[prefixSum] = i
     return max_len
 
+
+# Optimal force approach -- Two pointer approach
+# time - complexity - O(n)
+# space - complexity - O(1)
+def findLongestSubArrayWithGivenSumUsingTwoPointer(nums, K):
+    summ = 0
+    max_len = 0
+    n = len(nums)
+
+    i = 0
+    j = 0
+    while(j < n):
+        summ += nums[j]
+
+        while(summ > K and i <= j):
+            summ = summ - nums[i]
+            i += 1
         
+        if(summ == K):
+            max_len = max(max_len, j-i+1)
+            
+        j += 1
+
+    return max_len
+
 
 nums = [10, 5, 2, 7, 1, 9]
 K=15
 print(f"Length of Longest subarray with given sum using brute force 1 approach is", findLongestSubArrayWithGivenSum1(nums, K))
 print(f"Length of Longest subarray with given sum using brute force 2 approach is", findLongestSubArrayWithGivenSum2(nums, K))
 print(f"Length of Longest subarray with given sum using prefix Sum better approach is", findLongestSubArrayWithGivenSumUsingPrefixSum(nums, K))
+nums = [10, 10, 20, 30]
+K = 5
+print(f"Length of Longest subarray with given sum using two pointer optimal approach is", findLongestSubArrayWithGivenSumUsingTwoPointer(nums, K))
