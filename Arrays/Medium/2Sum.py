@@ -35,6 +35,7 @@ def twoSumUsingHashMap(nums, target):
     return list()
 
 # two pointer approach --- optimal approach -- for sorted arrays
+# Assuming array was given as sorted.
 # time - complexity - O(n)
 # space - complexity - O(1)
 def twoSumUsingTwoPointer(nums, target):
