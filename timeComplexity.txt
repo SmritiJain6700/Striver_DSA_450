@@ -1,0 +1,10 @@
+Time Complexity	        Input Size 
+    O(1)	            Any size 
+    O(log n)	        up to 10¹⁸ 
+    O(√n)	            up to 10¹⁶ 
+    O(n)	            up to 10⁸ 
+    O(n log n)	        up to 10⁷ 
+    O(n²)               up to 10⁴ 
+    O(n³)	            up to 10³ 
+    O(2ⁿ)	            up to 20–25 
+    O(n!)	            up to 10–11 
